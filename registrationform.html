@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .register-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .register-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .register-btn:hover {
+            background-color: #218838;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="register-container">
+        <h2><center>Register</center></h2>
+        <form action="show" method="post"><center>
+         <label> Name : <input type="text" class="input-box"  name="name" required></label>
+            <br>
+            <br>
+        
+         <label> Email :   <input type="email" class="input-box"  name="email" required>
+            <br>
+            <br>
+            <label>Password : <input type="password" class="input-box"  name="password" required>
+            <br>
+            <br>
+           <label>Phone Number :<input type="tel" class="input-box" name="phoneno" required>
+            <br>
+            <br>
+            
+            <label for="role">Select Role:</label>
+     <select id="role" name="role">
+  <option value="student">Student</option>
+  <option value="admin">Admin</option>
+</select>
+<br>
+<br>
+            
+            <button type="submit" class="register-btn">Register</button>
+            </center>
+            
+            
+        </form>
+    </div>
+</body>
+</html>
